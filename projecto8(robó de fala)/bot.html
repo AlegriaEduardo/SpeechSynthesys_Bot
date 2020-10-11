@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <link rel="stylesheet" href="bot.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bot de Fala</title>
+  </head>
+  <body class="m-auto text-center">
+    <div
+      class="border border-blue m-4"
+      contenteditable
+      oninput="setText(event)"
+    >
+      Seu texto Aqui
+    </div>
+    <button onclick="speak()" class="p-4 bg-blue-200 rounded shadow">
+      Falar
+    </button>
+    <button onclick="stop()" class="p-4 bg-blue-700 text-white rounded shadow">
+      Parar
+    </button>
+  </body>
+  <script src="bot.js"></script>
+</html>
