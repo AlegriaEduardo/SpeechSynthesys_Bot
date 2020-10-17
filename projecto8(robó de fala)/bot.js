@@ -11,3 +11,11 @@ function stop() {
 function setText(event) {
   utterance.text = event.target.innerText;
 }
+document.addEventListener("keydown", handleKeydown);
+function handleKeydown(event) {
+  const keyPressed = event.key;
+  if (keyPressed == "Enter") {
+    console.log("speaking...");
+    speak();
+  }
+}
